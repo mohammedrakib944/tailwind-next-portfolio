@@ -35,13 +35,13 @@ const Navbar = () => {
     >
       <div className=" container mx-auto flex w-full h-full justify-between items-center px-2 2xl:px-16">
         <h2 className="ml-2 dark:text-white text-3xl">
-          Md.<span className="text-indigo-600 dark:text-indigo-300">Rakib</span>
+          Md.<span className="text-sky-600 dark:text-sky-300">Rakib</span>
         </h2>
 
         <div className="flex items-center justify-center">
           <span
             onClick={handleTheme}
-            className="w-[40px] h-[40px] mr-5 text-lg bg-indigo-500/10 text-indigo-900 dark:text-indigo-100 rounded-full flex items-center justify-center cursor-pointer hover:bg-indigo-500/30 duration-300"
+            className="w-[40px] h-[40px] mr-5 text-lg bg-sky-500/10 text-sky-900 dark:text-sky-100 rounded-full flex items-center justify-center cursor-pointer hover:bg-sky-500/30 duration-300"
           >
             {theme ? <BsSun /> : <BsMoonStars />}
           </span>
@@ -88,9 +88,7 @@ const Navbar = () => {
             <div className="flex w-full items-center justify-between">
               <h2 className=" dark:text-white text-3xl">
                 Md.
-                <span className="text-indigo-600 dark:text-indigo-400">
-                  Rakib
-                </span>
+                <span className="text-sky-600 dark:text-sky-400">Rakib</span>
               </h2>
               <div onClick={handleNav} className="c-button">
                 <AiOutlineClose />
@@ -122,7 +120,7 @@ const Navbar = () => {
               </Link>
             </ul>
             <div>
-              <p className="uppercase font-bold tracking-widest text-indigo-400">
+              <p className="uppercase font-bold tracking-widest text-sky-400">
                 Let{"'"}s Connect
               </p>
               <div className="flex items-center justify-between my-4 max-w-[250px]">

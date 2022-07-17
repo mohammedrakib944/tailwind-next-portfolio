@@ -9,9 +9,11 @@ import tailwindcss from "../assets/tailwind.png";
 const Skills = () => {
   return (
     <div className="wrapper">
-      <p className="text-xl text-indigo-500 tracking-widest">Skills</p>
+      <p className="text-xl font-semibold text-sky-500 tracking-widest">
+        Skills
+      </p>
       <h2 className="py-4 text-slate-700 dark:text-slate-200 mb-4">
-        What I Can Do
+        What I Can Do 🧐
       </h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div className="p-6 shadow-xl rounded-xl hover:scale-105 duration-300 border-2 dark:bg-slate-800 dark:border-none">

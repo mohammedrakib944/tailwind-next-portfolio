@@ -4,7 +4,7 @@ import Link from "next/link";
 const ProjectsItem = (props) => {
   const { name, tech, url, bg } = props;
   return (
-    <div className="relative p-3 flex items-center justify-center h-auto w-full shadow-xl rounded-[0.85rem] border-2 border-indigo-500/30 group hover:bg-gradient-to-r from-indigo-500 via-purple-500 to-sky-500">
+    <div className="relative p-3 flex items-center justify-center h-auto w-full shadow-xl rounded-[0.85rem] border-2 border-sky-500/30 group hover:bg-gradient-to-r from-sky-500 via-purple-500 to-sky-500">
       <Image
         className="rounded-xl group-hover:opacity-20 duration-100"
         src={bg}
@@ -16,7 +16,7 @@ const ProjectsItem = (props) => {
         <Link href={url}>
           <a
             target="_blank"
-            className="py-2 px-6 rounded-full bg-white text-slate-700 hover:bg-indigo-100 font-semibold text-md cursor-pointer"
+            className="py-2 px-6 rounded-full bg-white text-slate-700 hover:bg-sky-100 font-semibold text-md cursor-pointer"
           >
             Live Preview
           </a>
