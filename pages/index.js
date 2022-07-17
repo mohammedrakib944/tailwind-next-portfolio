@@ -3,6 +3,8 @@ import Main from "../components/Main";
 import Navbar from "../components/Navbar";
 import About from "../components/About";
 import Skills from "../components/Skills";
+import Projects from "../components/Projects";
+import Contract from "../components/Contract";
 
 export const themeChange = () => {
   const GetElement = document.getElementById("mainWrapper");
@@ -11,7 +13,7 @@ export const themeChange = () => {
 
 export default function Home() {
   return (
-    <div className="whatever" id="mainWrapper">
+    <div className="relative bg-no-repeat" id="mainWrapper">
       <div className="w-full min-h-screen bg-white dark:bg-slate-900">
         <Head>
           <title>Rakib | Front-End Developer</title>
@@ -22,6 +24,8 @@ export default function Home() {
         <Main />
         <About />
         <Skills />
+        <Projects />
+        <Contract />
       </div>
     </div>
   );

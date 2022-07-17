@@ -5,22 +5,22 @@ import man from "../assets/man.jpg";
 
 const About = () => {
   return (
-    <div className="container mx-auto md:h-screen lg:w-[70%] px-4 flex items-center py-4">
+    <div className="container mx-auto lg:w-[70%] px-4 flex items-center py-4">
       <div className="md:grid grid-cols-7 gap-10">
         <div className="col-span-4 flex flex-col justify-center ">
           <p className="uppercase text-xl tracking-widest text-indigo-600 ">
             About
           </p>
           <h2 className="py-4 dark:text-slate-200">Who I Am</h2>
-          <p className="py-2 text-slate-500">
+          <p className="py-2 text-slate-500 text-lg">
             - I am not your normal Developer.
           </p>
-          <p className="py-2 text-slate-500">
+          <p className="py-2 text-slate-500 text-lg">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
             tenetur vel reiciendis quam perferendis laborum iure quae nesciunt,
             dignissimos officia.
           </p>
-          <p className="py-2 text-slate-500">
+          <p className="py-2 text-slate-500 text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
             animi, rem voluptas ullam, iste a voluptatum molestias cumque
             corporis ipsa officiis, veniam fuga quidem aliquam necessitatibus!

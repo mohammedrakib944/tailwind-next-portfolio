@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
@@ -8,6 +8,7 @@ import { themeChange } from "../pages";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [theme, setTheme] = useState(false);
+  const [shadow, setShadow] = useState(false);
 
   const handleNav = () => {
     setNav(!nav);
@@ -18,11 +19,23 @@ const Navbar = () => {
     themeChange();
   };
 
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      window.scrollY >= 100 ? setShadow(true) : setShadow(false);
+    });
+  }, []);
+
   return (
-    <div className="fixed w-full h-[60px] shadow-md z-[100] bg-white dark:bg-slate-800">
+    <div
+      className={
+        shadow
+          ? "fixed w-full h-[60px] z-[100] shadow-lg bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl"
+          : "fixed w-full h-[60px] z-[100]"
+      }
+    >
       <div className=" container mx-auto flex w-full h-full justify-between items-center px-2 2xl:px-16">
         <h2 className="ml-2 dark:text-white text-3xl">
-          Md.<span className="text-indigo-600 dark:text-indigo-400">Rakib</span>
+          Md.<span className="text-indigo-600 dark:text-indigo-300">Rakib</span>
         </h2>
 
         <div className="flex items-center justify-center">

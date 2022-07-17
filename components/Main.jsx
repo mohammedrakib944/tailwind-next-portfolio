@@ -3,9 +3,18 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsPersonLinesFill } from "react-icons/bs";
 
+import bg from "../assets/bg.png";
+
 const Main = () => {
+  const Background = {
+    backgroundImage: `url(${bg.src})`,
+  };
+
   return (
-    <div className="w-full h-screen text-center">
+    <div
+      className="w-full h-screen text-center bg-no-repeat bg-contain"
+      style={Background}
+    >
       <div className="container w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <p className="uppercase text-sm tracking-widest text-slate-600 dark:text-slate-300">
