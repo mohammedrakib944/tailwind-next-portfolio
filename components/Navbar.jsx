@@ -110,7 +110,7 @@ const Navbar = () => {
             </ul>
             <div>
               <p className="uppercase font-bold tracking-widest text-indigo-400">
-                Let's Connect
+                Let{"'"}s Connect
               </p>
               <div className="flex items-center justify-between my-4 max-w-[250px]">
                 <div className="c-button">
