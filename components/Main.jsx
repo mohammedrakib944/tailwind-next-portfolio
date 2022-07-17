@@ -21,7 +21,7 @@ const Main = () => {
             LETS BUILD SOMETING TOGETHER
           </p>
           <h1 className="py-4 text-slate-700 dark:text-indigo-100">
-            Hi, I{"'"}m <span className="text-indigo-600">Rakib</span>
+            Hi, I&apos;m <span className="text-indigo-600">Rakib</span>
           </h1>
           <h1 className="py-2 text-slate-700 dark:text-indigo-100">
             A Front-End Web Developer

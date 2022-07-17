@@ -11,7 +11,7 @@ const Projects = () => {
     <div className="wrapper">
       <p className="text-xl tracking-widest text-indigo-600">Projects</p>
       <h2 className="py-4 text-slate-700 dark:text-slate-200 mb-4">
-        What I've Build
+        What I&apos;ve Build
       </h2>
       <div className="grid md:grid-cols-2 gap-8">
         <ProjectsItem

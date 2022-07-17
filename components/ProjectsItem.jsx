@@ -8,6 +8,7 @@ const ProjectsItem = (props) => {
       <Image
         className="rounded-xl group-hover:opacity-20 duration-100"
         src={bg}
+        alt="rakib"
       />
       <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center">
         <h3 className="text-3xl text-white tracking-wider">{name}</h3>
