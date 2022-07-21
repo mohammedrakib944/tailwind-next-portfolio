@@ -16,7 +16,7 @@ const ProjectsItem = (props) => {
         <Link href={url}>
           <a
             target="_blank"
-            className="py-2 px-6 rounded-full bg-white text-slate-700 hover:bg-sky-100 font-semibold text-md cursor-pointer"
+            className="py-2 px-6 rounded-full bg-white text-black hover:bg-sky-100 font-semibold text-md cursor-pointer"
           >
             Live Preview
           </a>

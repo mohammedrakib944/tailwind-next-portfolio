@@ -5,7 +5,10 @@ import man from "../assets/rakib.jpg";
 
 const About = () => {
   return (
-    <div className="container mx-auto lg:w-[70%] px-4 flex items-center py-4">
+    <div
+      id="about"
+      className="container mx-auto lg:w-[70%] px-4 flex items-center p-4"
+    >
       <div className="md:grid grid-cols-8 gap-10">
         <div className="col-span-4 flex flex-col justify-center ">
           <p className="text-xl font-semibold tracking-widest text-sky-600 ">
@@ -37,7 +40,7 @@ const About = () => {
           </p>
         </div>
         <div className="col-span-4 w-full  h-auto mt-4 md:m-auto shadow-xl border-2 rounded-[20px] justify-center items-center p-2 overflow-hidden dark:border-slate-700">
-          <Image src={man} alt="man" className="rounded-xl" />
+          <Image src={man} alt="Rakib" className="rounded-xl" />
         </div>
       </div>
     </div>

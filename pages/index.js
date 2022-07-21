@@ -13,7 +13,7 @@ export const themeChange = () => {
 
 export default function Home() {
   return (
-    <div className="relative bg-no-repeat" id="mainWrapper">
+    <div className="relative bg-no-repeat dark" id="mainWrapper">
       <div className="w-full min-h-screen bg-white dark:bg-slate-900">
         <Head>
           <title>Rakib | Front-End Developer</title>

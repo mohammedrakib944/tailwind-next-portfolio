@@ -1,14 +1,14 @@
 import React from "react";
 import ProjectsItem from "./ProjectsItem";
 
-import Dorac from "../assets/projects/dorac.png";
+import Instagram from "../assets/projects/instaLong.png";
 import Ecommerce from "../assets/projects/ecommerce.png";
 import Movie from "../assets/projects/movie.png";
 import NFT from "../assets/projects/NFT.png";
 
 const Projects = () => {
   return (
-    <div className="wrapper">
+    <div id="projects" className="wrapper">
       <p className="text-xl font-semibold tracking-widest text-sky-600">
         Projects
       </p>
@@ -17,10 +17,10 @@ const Projects = () => {
       </h2>
       <div className="grid md:grid-cols-2 gap-8">
         <ProjectsItem
-          name="Dorac APP"
-          tech="React Js"
-          url="https://rakib-nft-2.netlify.app/"
-          bg={Dorac}
+          name="Instagram Dark Mood"
+          tech="Next Js, Tailwind CSS"
+          url="https://rakib-insta.netlify.app/"
+          bg={Instagram}
         />
         <ProjectsItem
           name="Ecommerce"

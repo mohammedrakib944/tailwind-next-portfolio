@@ -8,7 +8,7 @@ import tailwindcss from "../assets/tailwind.png";
 
 const Skills = () => {
   return (
-    <div className="wrapper">
+    <div id="skills" className="wrapper">
       <p className="text-xl font-semibold text-sky-500 tracking-widest">
         Skills
       </p>

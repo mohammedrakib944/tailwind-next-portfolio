@@ -2,7 +2,7 @@ import React from "react";
 
 const Contract = () => {
   return (
-    <div className="wrapper">
+    <div id="contact" className="wrapper">
       <p className="text-xl font-semibold tracking-widest text-sky-600">
         Contact
       </p>
