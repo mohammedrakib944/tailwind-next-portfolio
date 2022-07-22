@@ -15,7 +15,7 @@ const Projects = () => {
       <h2 className="py-4 text-slate-700 dark:text-slate-200 mb-4">
         What I&apos;ve Build 😌💪
       </h2>
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-3 gap-8">
         <ProjectsItem
           name="Instagram Dark Mood"
           tech="Next Js, Tailwind CSS"
@@ -30,7 +30,7 @@ const Projects = () => {
         />
         <ProjectsItem
           name="Movie"
-          tech="React Js"
+          tech="API integration, React Js"
           url="https://rakib-movie.netlify.app/"
           bg={Movie}
         />

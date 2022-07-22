@@ -20,10 +20,11 @@ const Main = () => {
           <p className="uppercase text-sm tracking-widest text-slate-600 dark:text-slate-300">
             LETS BUILD SOMETING TOGETHER
           </p>
-          <h1 className="py-4 text-slate-700 dark:text-sky-100">
-            Hi, I&apos;m <span className="text-sky-500">Rakib 😎</span>
+          <h1 className="py-4 text-slate-700 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-emerald-400">
+            Hi, I&apos;m{" "}
+            <span className="text-slate-900 dark:text-slate-100">Rakib 😎</span>
           </h1>
-          <h1 className="py-2 text-slate-700 dark:text-sky-100">
+          <h1 className="py-2 text-slate-700 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-emerald-400">
             A Front-End Web Developer
           </h1>
           <p className="py-4 text-slate-600  max-w-[70%] mx-auto dark:text-slate-400">

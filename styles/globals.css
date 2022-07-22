@@ -39,4 +39,7 @@
   .wrapper {
     @apply container mx-auto lg:w-[70%] px-4 py-16 mt-10;
   }
+  .gradient {
+    @apply bg-gradient-to-r from-blue-700 to-emerald-600;
+  }
 }
