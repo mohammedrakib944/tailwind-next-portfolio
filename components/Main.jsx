@@ -38,7 +38,7 @@ const Main = () => {
           >
             Hi, I&apos;m{" "}
             <span className="text-slate-900 dark:text-slate-100">
-              Rakib
+              Rakib{" "}
               <motion.div className="inline-block" variants={emoji}>
                 😎
               </motion.div>
@@ -59,18 +59,18 @@ const Main = () => {
           </motion.p>
           <motion.div
             variants={popUp}
-            className="flex items-center justify-between max-w-[330px] mx-auto py-4"
+            className="flex items-center justify-center gap-4 md:justify-between max-w-[330px] mx-auto py-4"
           >
-            <div className="c-button p-5 text-lg">
+            <div className="c-button p-3 md:p-5 text-lg">
               <FaLinkedinIn />
             </div>
-            <div className="c-button p-5 text-lg">
+            <div className="c-button p-3 md:p-5 text-lg">
               <FaGithub />
             </div>
-            <div className="c-button p-5 text-lg">
+            <div className="c-button p-3 md:p-5 text-lg">
               <AiOutlineMail />
             </div>
-            <div className="c-button p-5 text-lg">
+            <div className="c-button p-3 md:p-5 text-lg">
               <BsPersonLinesFill />
             </div>
           </motion.div>

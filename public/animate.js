@@ -17,10 +17,10 @@ export const pAnimateY = {
 };
 
 export const Iam = {
-  offscreen: { opacity: 0, x: 200 },
+  offscreen: { opacity: 0, y: 100 },
   onscreen: {
     opacity: 1,
-    x: 0,
+    y: 0,
     transition: { type: "spring", bounce: 0.4 },
   },
 };
@@ -41,11 +41,11 @@ export const popUp = {
 };
 
 export const imgAnimate = {
-  offscreen: { rotate: 30, opacity: 0, x: 100 },
+  offscreen: { scale: 0, opacity: 0, y: 100 },
   onscreen: {
-    rotate: 0,
+    scale: 1,
     opacity: 1,
-    x: 0,
+    y: 0,
     transition: { type: "spring", bounce: 0.4 },
   },
 };

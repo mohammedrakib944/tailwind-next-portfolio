@@ -25,6 +25,34 @@ const Navbar = () => {
     });
   }, []);
 
+  const NavLinks = [
+    {
+      id: 1,
+      text: "Home",
+      url: "/",
+    },
+    {
+      id: 2,
+      text: "About",
+      url: "/#about",
+    },
+    {
+      id: 3,
+      text: "Skills",
+      url: "/#skills",
+    },
+    {
+      id: 4,
+      text: "Projects",
+      url: "/#projects",
+    },
+    {
+      id: 5,
+      text: "Contact",
+      url: "/#contact",
+    },
+  ];
+
   return (
     <div
       className={
@@ -47,21 +75,11 @@ const Navbar = () => {
             {theme ? <BsSun /> : <BsMoonStars />}
           </span>
           <ul className="hidden md:flex">
-            <Link href="/">
-              <li className="c-link">Home</li>
-            </Link>
-            <Link href="/#about">
-              <li className="c-link">About</li>
-            </Link>
-            <Link href="/#skills">
-              <li className="c-link">Skills</li>
-            </Link>
-            <Link href="/#projects">
-              <li className="c-link">Projects</li>
-            </Link>
-            <Link href="/#contact">
-              <li className="c-link">Contact</li>
-            </Link>
+            {NavLinks.map((data) => (
+              <Link href={data.url} key={data.id}>
+                <li className="c-link">{data.text}</li>
+              </Link>
+            ))}
           </ul>
           <div
             onClick={handleNav}
@@ -97,32 +115,22 @@ const Navbar = () => {
             </div>
             <div className="border-b border-slate-400 my-4">
               <p className="w-[85%] md:w-[90%] py-4 dark:text-slate-400">
-                Lorem ipsum dolor sit amet.
+                Front End Developer
               </p>
             </div>
           </div>
 
           <div className="h-[70%] py-4 flex flex-col justify-between">
             <ul className="uppercase">
-              <Link href="/">
-                <li className="c-link ml-0 mb-6 w-fit">Home</li>
-              </Link>
-              <Link href="/#about">
-                <li className="c-link ml-0 mb-6 w-fit">About</li>
-              </Link>
-              <Link href="/#skills">
-                <li className="c-link ml-0 mb-6 w-fit">Skills</li>
-              </Link>
-              <Link href="/#projects">
-                <li className="c-link ml-0 mb-6 w-fit">Projects</li>
-              </Link>
-              <Link href="/#contact">
-                <li className="c-link ml-0 mb-6 w-fit">Contact</li>
-              </Link>
+              {NavLinks.map((data) => (
+                <Link href={data.url} key={data.id}>
+                  <li className="c-link ml-0 mb-6 w-fit">{data.text}</li>
+                </Link>
+              ))}
             </ul>
             <div>
               <p className="uppercase font-bold tracking-widest text-sky-400">
-                Let{"'"}s Connect
+                Let&apos;s Connect
               </p>
               <div className="flex items-center justify-between my-4 max-w-[250px]">
                 <div className="c-button">
